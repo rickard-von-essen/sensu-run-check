@@ -39,6 +39,8 @@ module SensuRunCheck
           statuses << status
           puts "#{checkname} #{status} #{stdout}"
         end
+        # Exit with critical if there is any critical, otherwise exit mith the highest.
+        exit(2) if statuses.include?(2)
         exit(statuses.max)
       else
         stdout, status = s.run_check(options[:run_check])
