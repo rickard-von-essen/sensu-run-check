@@ -1,5 +1,7 @@
 # Sensu Run Check
 
+[![Build Status](https://travis-ci.org/rickard-von-essen/sensu-run-check.svg?branch=master)](https://travis-ci.org/rickard-von-essen/sensu-run-check)
+
 Often after just doing a change on servers you want to just be sure that they’re all going to pass a certain or all [Sensu](http://sensuapp.org) checks. This gem exposes Sensu checks to be executed local on the command line.
 
 _WARNING_ This is very much a hack and will break with other versions* of Sensu!
